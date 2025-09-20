@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		61BC5EA42E7F2FD0004F3416 /* RandomChoice Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 61BC5EA32E7F2FD0004F3416 /* RandomChoice Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61BC5EEB2E7F4022004F3416 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC5EEA2E7F4022004F3416 /* Models.swift */; };
+		61BC5EEC2E7F4022004F3416 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC5EEA2E7F4022004F3416 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,11 +71,25 @@
 		61BC5EA32E7F2FD0004F3416 /* RandomChoice Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RandomChoice Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BC5EB22E7F2FD2004F3416 /* RandomChoice Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RandomChoice Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BC5EBC2E7F2FD2004F3416 /* RandomChoice Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RandomChoice Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61BC5EEA2E7F4022004F3416 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		61BC5EDA2E7F302D004F3416 /* Exceptions for "RandomChoice" folder in "RandomChoice" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 61BC5E7F2E7F2FCC004F3416 /* RandomChoice */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		61BC5E822E7F2FCC004F3416 /* RandomChoice */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				61BC5EDA2E7F302D004F3416 /* Exceptions for "RandomChoice" folder in "RandomChoice" target */,
+			);
 			path = RandomChoice;
 			sourceTree = "<group>";
 		};
@@ -153,6 +169,7 @@
 		61BC5E772E7F2FCB004F3416 = {
 			isa = PBXGroup;
 			children = (
+				61BC5EE92E7F3F7E004F3416 /* Common */,
 				61BC5E822E7F2FCC004F3416 /* RandomChoice */,
 				61BC5E902E7F2FD0004F3416 /* RandomChoiceTests */,
 				61BC5E9A2E7F2FD0004F3416 /* RandomChoiceUITests */,
@@ -174,6 +191,14 @@
 				61BC5EBC2E7F2FD2004F3416 /* RandomChoice Watch AppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		61BC5EE92E7F3F7E004F3416 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				61BC5EEA2E7F4022004F3416 /* Models.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BC5EEB2E7F4022004F3416 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BC5EEC2E7F4022004F3416 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +647,7 @@
 				DEVELOPMENT_TEAM = VRGWRR6AF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RandomChoice-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = RandomChoice;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.anastasiasharova.RandomChoice;
@@ -649,6 +677,7 @@
 				DEVELOPMENT_TEAM = VRGWRR6AF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RandomChoice-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = RandomChoice;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.anastasiasharova.RandomChoice;
@@ -674,12 +703,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VRGWRR6AF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandomChoice/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RandomChoice;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -693,6 +725,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiasharova.RandomChoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -705,12 +738,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VRGWRR6AF3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandomChoice/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = RandomChoice;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -724,6 +760,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiasharova.RandomChoice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
