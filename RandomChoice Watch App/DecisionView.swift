@@ -46,7 +46,6 @@ struct DecisionView: View {
                             .rotationEffect(.degrees(spinDegrees))
                     }
                 }
-                .padding(.vertical, 20)
                 
                 // Кнопка запуска генерации
                 Button(action: startSpinning) {
